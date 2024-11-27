@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Leandro Sato IOT3</title>
+    <link rel="stylesheet" type="text/css" href="site pessoal2.css" media="all" />
+</head>
+<body>
+
+ <div class="titulo">
+    <h1>Leandro Sato</h1>
+    <h2>Senac Nações Unida</h2>
+    <h3>Internet das Coisas (IOT)</h3>
+    <img src="logo senac.webp" height="100" width="100">
+ </div>
+
+ <div class="kakaka">
+    <div class="imagem2">
+        <img id="mainImage" src="sufgang.jpg" height="600" width="600">
+    </div>
+
+    <div class="pessoal">
+        <h3>Meu nome é Leandro Sato de IOT3, e nesse terceiro ano do ensino médio, tive muitas experiências e lembranças inesquecíveis. 
+            Um momento que não esqueço, foi numa aula de matemática, todo mundo estava fazendo sua lição, concentrados, e do nada, a energia cai. Todo mundo ficou indignado, mas depois rimos. Pois mesmo depois de acontecer algo que apagou nossas lições, 
+            foi algo que aconteceu em grupo, momentos assim nós ficamos mais.
+            <h3>Nos meus sites, queria fazer algo mais engraçado. E minha comida preferida é sushi🍣, recomendo este restaurante, Noryo Sushi!</h3>
+            <img id="mainImage" src="Image (2).jpeg" height="200" width="200">
+        </h3>
+    </div>
+ </div>
+
+ <div class="botao">
+    <a href="areas dos saberes.html" class="botao">Área dos Saberes</a>
+ </div>
+
+ <script>
+    function changeBackgroundColor() {
+        const colors = ['#FF5733', '#33FF57', '#3357FF', '#F333FF', '#33FFF5']; // o plano de fundo muda de cor automaticamente
+        const body = document.body;
+        let currentColorIndex = 0;
+
+        setInterval(() => {
+            body.style.backgroundColor = colors[currentColorIndex];
+            currentColorIndex = (currentColorIndex + 1) % colors.length;
+        }, 1000); // Muda a cor a cada 1 segundo
+    }
+
+    function changeImage() {
+        const images = ['sufgang.jpg', 'AI GLAUCO.png'];
+        const mainImage = document.getElementById('mainImage');
+        let currentImageIndex = 0;
+
+        setInterval(() => {
+            mainImage.src = images[currentImageIndex];
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+        }, 2000); // Muda a imagem a cada 2 segundos
+    }
+
+    window.onload = () => {
+        changeBackgroundColor();
+        changeImage();
+    };
+ </script>
+
+</body>
+</html>
