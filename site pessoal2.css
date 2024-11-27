@@ -1,0 +1,62 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+  transition: background-color 1s ease; /* Adiciona transição suave */
+}
+
+.titulo {
+  background-color: rgb(90, 19, 156);
+  text-align: center;
+  position: relative; /* Necessário para alinhar a imagem usando posicionamento absoluto */
+}
+
+.titulo h1 {
+  margin: 0; /* Remove margens para o texto */
+}
+
+.titulo img {
+  position: absolute; /* Deixa a imagem flutuante */
+  top: 7px; /* Distância do topo */
+  right: 7px; /* Distância da direita */
+}
+
+.kakaka {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.imagem2 {
+  margin-right: 20px;
+}
+
+img {
+  display: inline-block;
+  border: 5px solid purple;
+  border-radius: 20px; /* Define os cantos arredondados */
+}
+
+.botao {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.botao:hover {
+  background-color: #0056b3;
+}
+
+.pessoal {
+  background-color: rgb(77, 67, 223);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 20px;
+  border-radius: 10px;
+}
